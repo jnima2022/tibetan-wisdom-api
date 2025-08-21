@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tibetan-wisdom-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 8000
