@@ -178,28 +178,28 @@ async def landing_page(request: Request):
                         <h3 class="text-xl font-semibold mb-3 text-purple-600">GET /wisdom/random</h3>
                         <p class="text-gray-600 mb-4">Get a random piece of wisdom</p>
                         <div class="code-block text-white p-4 rounded text-sm">
-                            <div class="text-green-400">curl https://your-api.com/wisdom/random</div>
+                            <div class="text-green-400">curl https://tibetan-wisdom-api.onrender.com/wisdom/random</div>
                         </div>
                     </div>
                     <div class="border rounded-lg p-6">
                         <h3 class="text-xl font-semibold mb-3 text-purple-600">GET /wisdom</h3>
                         <p class="text-gray-600 mb-4">Get paginated wisdom with optional filtering</p>
                         <div class="code-block text-white p-4 rounded text-sm">
-                            <div class="text-green-400">curl https://your-api.com/wisdom?category=wisdom&page=1</div>
+                            <div class="text-green-400">curl https://tibetan-wisdom-api.onrender.com/wisdom?category=wisdom&page=1</div>
                         </div>
                     </div>
                     <div class="border rounded-lg p-6">
                         <h3 class="text-xl font-semibold mb-3 text-purple-600">GET /wisdom/categories</h3>
                         <p class="text-gray-600 mb-4">Get all available categories</p>
                         <div class="code-block text-white p-4 rounded text-sm">
-                            <div class="text-green-400">curl https://your-api.com/wisdom/categories</div>
+                            <div class="text-green-400">curl https://tibetan-wisdom-api.onrender.com/wisdom/categories</div>
                         </div>
                     </div>
                     <div class="border rounded-lg p-6">
                         <h3 class="text-xl font-semibold mb-3 text-purple-600">GET /wisdom/search</h3>
                         <p class="text-gray-600 mb-4">Search wisdom by keyword</p>
                         <div class="code-block text-white p-4 rounded text-sm">
-                            <div class="text-green-400">curl https://your-api.com/wisdom/search?q=compassion</div>
+                            <div class="text-green-400">curl https://tibetan-wisdom-api.onrender.com/wisdom/search?q=compassion</div>
                         </div>
                     </div>
                 </div>
@@ -306,7 +306,7 @@ async def landing_page(request: Request):
                             <div>
                                 <h4 class="font-semibold text-gray-800 mb-3">JavaScript/Node.js</h4>
                                 <div class="code-block text-white p-4 rounded text-sm overflow-x-auto">
-                                    <pre class="text-green-400 whitespace-pre-wrap break-words">fetch('https://your-api.com/wisdom/random')
+                                    <pre class="text-green-400 whitespace-pre-wrap break-words">fetch('https://tibetan-wisdom-api.onrender.com/wisdom/random')
 .then(response => response.json())
 .then(data => {
   console.log(data.wisdom.text);
@@ -317,7 +317,7 @@ async def landing_page(request: Request):
                                 <h4 class="font-semibold text-gray-800 mb-3">Python</h4>
                                 <div class="code-block text-white p-4 rounded text-sm overflow-x-auto">
                                     <pre class="text-green-400 whitespace-pre-wrap break-words">import requests
-response = requests.get('https://your-api.com/wisdom/random')
+response = requests.get('https://tibetan-wisdom-api.onrender.com/wisdom/random')
 wisdom = response.json()['wisdom']
 print(wisdom['text'])</pre>
                                 </div>
@@ -394,7 +394,7 @@ print(wisdom['text'])</pre>
                         </div>
                     </div>
                     <div class="mt-6">
-                        <a href="https://github.com/thukpalabs/tibetan-wisdom-api" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition inline-flex items-center">
+                        <a href="https://github.com/jnima2022/tibetan-wisdom-api" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition inline-flex items-center">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
                             </svg>
@@ -411,7 +411,7 @@ print(wisdom['text'])</pre>
                 <p>&copy; 2025 Tibetan Wisdom API. Built with FastAPI & ❤️ by <strong>Thukpa Labs</strong></p>
                 <div class="mt-4">
                     <a href="/docs" class="text-purple-200 hover:text-white mx-4">API Documentation</a>
-                    <a href="https://github.com" class="text-purple-200 hover:text-white mx-4">GitHub</a>
+                    <a href="https://github.com/jnima2022/tibetan-wisdom-api" class="text-purple-200 hover:text-white mx-4">GitHub</a>
                     <a href="mailto:contact@thukpalabs.com" class="text-purple-200 hover:text-white mx-4">Contact Thukpa Labs</a>
                 </div>
             </div>

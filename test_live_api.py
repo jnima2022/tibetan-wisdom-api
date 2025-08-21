@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
 Test your live API deployment on Render
-Replace YOUR_APP_NAME with your actual Render app name
 """
 
 import requests
 import json
 
-# Replace with your actual Render URL
-API_BASE = "https://YOUR_APP_NAME.onrender.com"
+# Your actual live Render URL
+API_BASE = "https://tibetan-wisdom-api.onrender.com"
 
 def test_endpoint(endpoint, description):
     """Test a single endpoint"""
@@ -42,9 +41,8 @@ def main():
     print("🚀 Testing Live Tibetan Wisdom API")
     print("=" * 50)
     
-    # Update this with your actual Render URL
     print(f"🌐 API Base URL: {API_BASE}")
-    print("⚠️  Make sure to replace YOUR_APP_NAME with your actual app name!")
+    print("🎯 Testing your live deployment!")
     
     # Test key endpoints
     test_endpoint("/health", "Health Check")
@@ -58,6 +56,10 @@ def main():
     print(f"🌐 Visit your live API: {API_BASE}")
     print(f"📖 API Documentation: {API_BASE}/docs")
     print("💼 Perfect for showing recruiters!")
+    print("\n🔗 Share these links:")
+    print(f"   Landing Page: {API_BASE}")
+    print(f"   API Docs: {API_BASE}/docs")
+    print(f"   Random Wisdom: {API_BASE}/wisdom/random")
 
 if __name__ == "__main__":
     main()

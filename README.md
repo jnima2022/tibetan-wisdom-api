@@ -36,7 +36,7 @@ A FastAPI-powered REST API serving over 1000 authentic pieces of Tibetan wisdom 
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/jnima2022/tibetan-wisdom-api.git
 cd tibetan-wisdom-api
 ```
 
@@ -51,8 +51,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. **Add your wisdom data**
-   - Place your `tibetan_quotes_collection.json` file in the root directory
+4. **Add wisdom data**
+   - Place `tibetan_quotes_collection.json` file in the root directory
    - The file should follow this structure:
 ```json
 {
@@ -127,22 +127,22 @@ To ensure fair usage and optimal performance, the API implements the following r
 
 ### Get Random Wisdom
 ```bash
-curl https://your-api.com/wisdom/random
+curl https://tibetan-wisdom-api.onrender.com/wisdom/random
 ```
 
 ### Search for Wisdom by Category
 ```bash
-curl "https://your-api.com/wisdom?category=wisdom&page=1&per_page=5"
+curl "https://tibetan-wisdom-api.onrender.com/wisdom?category=wisdom&page=1&per_page=5"
 ```
 
 ### Search by Keyword
 ```bash
-curl "https://your-api.com/wisdom/search?q=compassion"
+curl "https://tibetan-wisdom-api.onrender.com/wisdom/search?q=compassion"
 ```
 
 ### Filter by Author
 ```bash
-curl "https://your-api.com/wisdom?author=Dalai%20Lama"
+curl "https://tibetan-wisdom-api.onrender.com/wisdom?author=Dalai%20Lama"
 ```
 
 ## 💡 Use Cases & Applications
@@ -175,15 +175,16 @@ We welcome contributions to expand our wisdom collection! You can help by:
 
 ### Contribution Guidelines
 1. **Fork the repository** on GitHub
-2. **Add your wisdom** following our JSON format
+2. **Add Quotes/Wisdom** following our JSON format
 3. **Verify authenticity** of sources and attributions
 4. **Submit a pull request** with clear descriptions
 
-**GitHub Repository**: `https://github.com/thukpalabs/tibetan-wisdom-api`
+**GitHub Repository**: `https://github.com/jnima2022/tibetan-wisdom-api`
 
 *We review all contributions to maintain authenticity and respect for Tibetan Buddhist tradition.*
 
 ## 🚀 Deployment
+This API is already live at https://tibetan-wisdom-api.onrender.com, but you can deploy your own instance:
 
 ### Deploy to Render
 
@@ -263,9 +264,9 @@ tibetan-wisdom-api/
 
 ## 🌐 Live Demo
 
-- **Landing Page**: [Your deployed URL]
-- **API Docs**: [Your deployed URL]/docs
-- **Random Wisdom**: [Your deployed URL]/wisdom/random
+- **Landing Page**: https://tibetan-wisdom-api.onrender.com
+- **API Docs**: https://tibetan-wisdom-api.onrender.com/docs
+- **Random Wisdom**: https://tibetan-wisdom-api.onrender.com/wisdom/random
 
 ## 📄 License
 
@@ -277,9 +278,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact & Support
 
-- **Developer**: Thukpa Labs
-- **GitHub**: [https://github.com/thukpalabs](https://github.com/thukpalabs)
-- **API Repository**: [https://github.com/thukpalabs/tibetan-wisdom-api](https://github.com/thukpalabs/tibetan-wisdom-api)
+- **Developer**: Thukpa Labs by Jamyang Nima
+- **GitHub**: [https://github.com/jnima2022](https://github.com/jnima2022)
+- **API Repository**: [https://github.com/jnima2022/tibetan-wisdom-api](https://github.com/jnima2022/tibetan-wisdom-api)
 - **Email**: thukpalabs.help@gmail.com
 
 ## 🙏 Acknowledgments
